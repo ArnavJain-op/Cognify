@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COGNIFY - Transforming Games into Education</title>
+    <link rel="stylesheet" href="hello.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="flex items-center justify-between py-8 px-4 gap-4">
+        <ul class="flex items-center gap-8 list-none">
+            <li><a href="index.html" class="font-extrabold text-lg text-white">COGNIFY</a></li>
+            <li><a href="feature.html" class="font-medium text-white hover:text-[#8263a3]">Features</a></li>
+            <li><a href="about.html" class="font-medium text-white hover:text-[#8263a3]">About</a></li>
+            <li><a href="price.html" class="font-medium text-white hover:text-[#8263a3]">Pricing</a></li>
+        </ul>
+      
+    </nav>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Math Quest</div>
+                <div class="sub-title">Master Math through Adventures</div>
+                <div class="bottom">
+                    <p>Embark on thrilling math adventures solving puzzles, unlocking secrets, and mastering skills in an exciting interactive journey.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Science Lab</div>
+                <div class="sub-title">Explore the Wonders of Science</div>
+                <div class="bottom">
+                    <p>Conduct virtual experiments, explore scientific principles, and uncover fascinating discoveries in an immersive educational environment.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">History Hunt</div>
+                <div class="sub-title">Time Travel to Learn History</div>
+                <div class="bottom">
+                    <p>Travel back in time, uncover key historical moments, and connect with influential figures in an engaging, interactive experience.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Word Wizard</div>
+                <div class="sub-title">Enhance Your Vocabulary</div>
+                <div class="bottom">
+                    <p>Boost vocabulary skills by solving fun challenges, tackling puzzles, and improving language proficiency in an exciting way.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Coding Crafters</div>
+                <div class="sub-title">Learn Programming Basics</div>
+                <div class="bottom">
+                    <p>Learn coding fundamentals by solving interactive challenges and engaging in programming projects tailored for beginners.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="assets/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Eco Explorer</div>
+                <div class="sub-title">Discover the Environment</div>
+                <div class="bottom">
+                    <p>Discover ecosystems, explore sustainability concepts, and complete environmental quests designed for young, curious learners.</p>
+                    <button onclick="window.location.href='index.html'">Home Page</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.card').hover(
+            function () {
+                $(this).addClass('active');
+                $(this).find('.bottom').stop().slideDown();
+            },
+            function () {
+                $(this).removeClass('active');
+                $(this).find('.bottom').stop().slideUp();
+            }
+        );
+    </script>
+</body>
+
+</html>

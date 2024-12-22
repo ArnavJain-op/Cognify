@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between py-8 px-4 gap-4">
+        <ul class="flex items-center gap-8 list-none">
+          <li><a href="index.html" class="font-extrabold text-lg text-white">Cognify</a></li>
+          <li><a href="feature.html" class="font-medium text-white hover:text-[#8263a3]">Features</a></li>
+          <li><a href="about.html" class="font-medium text-white hover:text-[#8263a3]">About</a></li>
+          <li><a href="price.html" class="font-medium text-white hover:text-[#8263a3]">Pricing</a></li>
+        </ul>
+   
+    </nav>
+
+    <!-- Section 1 -->
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">Welcome to Cognify</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="assets/img1.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Empowering Learning for All</h3>
+                    <p>
+                        Cognify is your go-to platform for redefining education. 
+                        With innovative tools and user-friendly interfaces, 
+                        we aim to simplify complex concepts, making learning engaging and accessible for everyone. 
+                        Explore endless possibilities, collaborate effectively, and achieve more with Cognify.
+                    </p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Our Features</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="assets/img2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Why Choose Cognify?</h4>
+                    <p>
+                        Cognify provides a dynamic ecosystem of tools designed to boost creativity, collaboration, and productivity. 
+                        Whether you're a student, a professional, or a lifelong learner, Cognify offers:
+                        <ul>
+                            <li>Interactive learning modules</li>
+                            <li>Customizable study plans</li>
+                            <li>Real-time collaboration features</li>
+                        </ul>
+                        Step into the future of education with us!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">Connect with Us</h3>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href="#"><i class="fab fa-facebook"> Facebook</i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"> Instagram</i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"> Twitter</i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"> YouTube</i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"> LinkedIn</i></a></li>
+                </div>
+                <div class="image">
+                    <img src="assets/img3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.sec-01 .image', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+</body>
+</html>
